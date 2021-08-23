@@ -5,6 +5,7 @@
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
+    "start:local": "NODE_ENV=local npm run start",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -21,9 +22,12 @@
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "^1.0.1",
     "@nestjs/core": "^8.0.0",
     "@nestjs/mongoose": "^8.0.1",
     "@nestjs/platform-express": "^8.0.0",
+    "dotenv": "^10.0.0",
+    "env-cmd": "^10.1.0",
     "mongoose": "^5.13.7",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
