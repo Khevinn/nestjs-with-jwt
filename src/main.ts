@@ -8,7 +8,7 @@ require('dotenv').config({ path: `../${process.env.NODE_ENV}.env` });
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(process.env.PORT);
+  await app.listen(3000);
 }
 
 bootstrap();
